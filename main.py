@@ -1,7 +1,7 @@
 import cv2 as cv
 
-# video = cv.VideoCapture("love_story.mp4")
-video = cv.VideoCapture(0)
+video = cv.VideoCapture("love_story.mp4")
+# video = cv.VideoCapture(0)
 
 ret, first_frame = video.read()
 ret, second_frame = video.read()
