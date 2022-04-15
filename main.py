@@ -11,7 +11,7 @@ while True:
     gray = cv.cvtColor(diff, cv.COLOR_BGR2GRAY)
     gray = cv.GaussianBlur(gray, (21,21),0)
 
-    thresh = cv.threshold(gray, 70, 255, cv.THRESH_BINARY)[1]
+    thresh = cv.threshold(gray, 10, 255, cv.THRESH_BINARY)[1]
 
     thresh = cv.dilate(thresh, None, iterations=2)
     
